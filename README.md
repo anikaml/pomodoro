@@ -61,3 +61,7 @@ Open [Building the App](https://vitejs.dev/guide/static-deploy#building-the-app)
 Preview the production build locally using a simple HTTP server.
 Open [http://localhost:4173](http://localhost:4173) to view it in the browser.\
 See [Testing the App Locally](https://vitejs.dev/guide/static-deploy#testing-the-app-locally) for more information.
+
+## Sounds
+
+All sounds used by this project are sourced from [https://freesound.org/](https://freesound.org/)
