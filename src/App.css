@@ -1,0 +1,151 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  --background: #f13346;
+  --backgroundCard: white;
+  --backgroundButton: #f13346;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --color: black;
+  --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 100vw;
+}
+
+[data-theme="true"] {
+  --background: rgb(30, 30, 30);
+  --backgroundCard: rgb(30, 30, 30);
+  --backgroundButton: rgba(241, 51, 70, 0.8);
+  --text-primary: white;
+  --text-secondary: rgb(200, 200, 200);
+  --color: white;
+  --box-shadow: rgba(255, 255, 255, 0.5) 0px 6px 24px 0px,
+    rgba(255, 255, 255, 0.6) 0px 0px 0px 1px;
+}
+
+.main {
+  background-color: var(--background);
+  color: var(--color);
+  padding: 4rem 15rem;
+}
+
+.card {
+  padding: 2em;
+  box-shadow: var(--box-shadow);
+  border-radius: 25px;
+  background-color: var(--backgroundCard);
+  margin-bottom: 2em;
+}
+
+.time {
+  margin-bottom: 0.1em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0 1em;
+  background-color: var(--backgroundButton);
+  color: var(--backgroundCard);
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.buttonOutlined {
+  outline-style: solid;
+  cursor: pointer;
+  border: 1px solid #f13346;
+  background-color: var(----background);
+  color: var(--backgroundButton);
+}
+
+.settingsButton {
+  float: right;
+  margin: 1em;
+}
+
+label {
+  display: block;
+  color: #888;
+  text-align: left;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  :hover {
+    cursor: pointer;
+  }
+}
+
+input,
+select {
+  margin: 0.1em 1em 1em 0em;
+  padding: 1em;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  width: -webkit-fill-available;
+  background-color: var(--backgroundCard);
+  color: var(--text-primary);
+}
+
+.tasksContainer {
+  padding: 0em 3em;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  padding: 1em;
+  margin: 0.25em;
+  background-color: var(--backgroundCard);
+  color: var(--text-primary);
+}
+
+.taskDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.deleteButton {
+  padding: 0.5em;
+  height: 100%;
+}
+
+.errorText {
+  margin: 0em 0em 0.5em;
+  color: red;
+  font-size: 13px;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding: 4rem 1rem;
+  }
+
+  button {
+    margin: 0.25rem
+  }
+}
